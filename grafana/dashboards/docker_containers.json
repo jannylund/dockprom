@@ -403,7 +403,7 @@
           },
           "targets": [
             {
-              "expr": "(node_filesystem_size{fstype=\"aufs\"} - node_filesystem_free{fstype=\"aufs\"}) / node_filesystem_size{fstype=\"aufs\"}  * 100",
+              "expr": "(node_filesystem_size{fstype=\"ext4\"} - node_filesystem_free{fstype=\"ext4\"}) / node_filesystem_size{fstype=\"ext4\"}  * 100",
               "interval": "30s",
               "intervalFactor": 1,
               "legendFormat": "",
